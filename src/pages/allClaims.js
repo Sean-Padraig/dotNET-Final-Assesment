@@ -1,4 +1,4 @@
-const allClaims = () => {
+const AllClaims = () => {
     return (
         <div
             style={{
@@ -13,4 +13,4 @@ const allClaims = () => {
     );
 };
 
-export default allClaims;
+export default AllClaims;

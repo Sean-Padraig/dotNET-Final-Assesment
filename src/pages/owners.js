@@ -1,4 +1,4 @@
-const owners = () => {
+const Owners = () => {
     return (
         <div
             style={{
@@ -13,4 +13,4 @@ const owners = () => {
     );
 };
 
-export default owners;
+export default Owners;

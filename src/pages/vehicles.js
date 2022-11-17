@@ -1,4 +1,4 @@
-const vehicles = () => {
+const Vehicles = () => {
     return (
         <div
             style={{
@@ -13,4 +13,4 @@ const vehicles = () => {
     );
 };
 
-export default vehicles;
+export default Vehicles;

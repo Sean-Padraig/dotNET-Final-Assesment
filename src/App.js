@@ -2,26 +2,24 @@ import './App.css';
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Home from './pages';
-import allClaims from './pages/allClaims';
-import allOwners from './pages/allOwners';
-import allVehicles from './pages/allVehicles';
-import vehicles from './pages/vehicles';
-import claims from './pages/claims';
-import owners from './pages/owners';
+import AllOwners from './pages/allOwners';
+import AllVehicles from './pages/allVehicles';
+import AllClaims from './pages/allClaims';
+import Owners from './pages/owners';
+import Vehicles from './pages/vehicles';
+import Claims from './pages/claims';
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/allowners" element={<allOwners />} />
-        <Route path="/allvehicles" element={<allVehicles />} />
-        <Route path="/allclaims" element={<allClaims />} />
-        <Route path="/owners" element={<owners />} />
-        <Route path="/vehicles" element={<vehicles />} />
-        <Route path="/claims" element={<claims />} />
+        <Route path="/allowners" element={<AllOwners />} />
+        <Route path="/allvehicles" element={<AllVehicles />} />
+        <Route path="/allclaims" element={<AllClaims />} />
+        <Route path="/owners" element={<Owners />} />
+        <Route path="/vehicles" element={<Vehicles />} />
+        <Route path="/claims" element={<Claims />} />
       </Routes>
     </BrowserRouter>
   );
