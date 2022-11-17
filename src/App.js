@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from './pages';
+import allClaims from './pages/allClaims';
+import allOwners from './pages/allOwners';
+import allVehicles from './pages/allVehicles';
+import vehicles from './pages/vehicles';
+import claims from './pages/claims';
+import owners from './pages/owners';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/allowners" element={<allOwners />} />
+        <Route path="/allvehicles" element={<allVehicles />} />
+        <Route path="/allclaims" element={<allClaims />} />
+        <Route path="/owners" element={<owners />} />
+        <Route path="/vehicles" element={<vehicles />} />
+        <Route path="/claims" element={<claims />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
